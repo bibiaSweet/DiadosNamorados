@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Lado da Bia 💕</title>
+    <link rel="stylesheet" href="bia.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="logo">💕 NOSSO CANTINHO </div>
+            <ul> 
+                <li><a href="index.html">VOLTAR AO INÍCIO</a></li>
+                <li><a href="#timeline">NOSSA HISTÓRIA</a></li>            
+                <li><a href="#playlist">PLAYLIST</a></li>
+                <li><a href="#cartas">CARTAS</a></li>
+                <li><a href="#quiz">QUIZ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Contador de Tempo -->
+        <section id="contador-sec">
+            <h2>Tempo que estamos juntos:</h2>
+            <div id="relogio">
+                <span id="dias">0</span> dias, <span id="horas">0</span> horas e <span id="minutos">0</span> minutos.
+            </div>
+        </section>
+
+        <!-- Linha do Tempo -->
+        <section id="timeline">
+            <h2>Nossa Linha do Tempo</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <img src="PRIMEIRA.PNG" alt="Nossa primeira foto">
+                    <p>PRIMEIRA CONVERSA</p>
+                    <h3>spoiler: o hacker e a menina da enfermagem acabam ficando juntos</h3>
+                </div>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <img src="PRIMEIRA.PNG" alt="Nossa primeira foto">
+                    <p>PRIMEIRA CONVERSA</p>
+                    <h3>spoiler: o hacker e a menina da enfermagem acabam ficando juntos</h3>
+                </div>                
+
+            </div>
+        </section>
+
+        <!-- Playlist -->
+        <section id="playlist">
+    <h2>NOSSA MÚSICA</h2>
+    <div class="grid-container">
+        <a href="https://www.youtube.com/watch?v=RL5DtC-xTrU&list=RDRL5DtC-xTrU&start_radio=1" target="_blank" class="card-musica">
+            <img src="musica.png" alt="Capa da música">
+            <p>[LIVRE PRA VOAR]</p>
+        </a> </div>
+</section>
+
+        <!-- Cartas Abertas -->
+        <section id="cartas">
+            <h2>Cartas Abertas</h2>
+            <div class="botoes-cartas">
+                <button onclick="abrirCarta('triste')">Para ler quando estiver triste</button>
+                <button onclick="abrirCarta('saudade')">Para ler quando sentir saudade</button>
+                <button onclick="abrirCarta('futuro')">Para ler daqui a 5 anos</button>
+            </div>
+            
+            <div id="conteudo-carta" class="carta-oculta">
+                <h3 id="titulo-carta"></h3>
+                <p id="texto-carta"></p>
+                <button onclick="fecharCarta()" class="btn-fechar">Guardar carta</button>
+            </div>
+        </section>
+
+        <!-- Mapa do Relacionamento -->
+        <section id="mapa">
+            <h2>Mapa do Nosso Relacionamento</h2>
+            <div class="grid-container">
+                <div class="card-lugar">
+                    <img src="[FOTO_DO_LUGAR.jpg]" alt="Lugar Favorito 1">
+                    <h3>[NOME DO LUGAR]</h3>
+                    <p>[Por que esse lugar é especial?]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Interativo -->
+        <section id="quiz">
+            <h2>Quiz do Casal 🧩</h2>
+            <p>Vamos ver se os espectadores acertam!</p>
+            
+            <div class="pergunta-quiz">
+                <h3>Quem demora mais pra responder?</h3>
+                <button onclick="responderQuiz('Bia')">Bia</button>
+                <button onclick="responderQuiz('Felipe')">Felipe</button>
+            </div>
+
+            <div class="pergunta-quiz">
+                <h3>Quem demora mais tempo no banho?</h3>
+                <button onclick="responderQuiz('Bia')">Bia</button>
+                <button onclick="responderQuiz('Felipe')">Felipe</button>
+            </div>
+            
+            <!-- Crie mais blocos .pergunta-quiz iguais a esse para as outras perguntas -->
+        </section>
+
+        <!-- Cápsula do Tempo -->
+        <section id="capsula">
+            <h2>Cápsula do Tempo ⏳</h2>
+            <div class="capsula-caixa">
+                <h3>Nossos Sonhos e Metas</h3>
+                <ul>
+                    <li>[META 1: Ex: Viajar para...]</li>
+                    <li>[META 2: Ex: Morar em...]</li>
+                </ul>
+                <p><strong>Mensagem para o futuro:</strong> [Escreva aqui uma mensagem para vocês lerem juntos daqui a alguns anos...]</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> 
+      <p>&copy; 2026, Polizel - Página de namoro</p>
+    </footer>
+
+    <script src="bia.js"></script>
+</body>
+</html>

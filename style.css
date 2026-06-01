@@ -1,0 +1,112 @@
+/* Configurações gerais do corpo (fundo) da página inteira */
+body {
+    margin: 0; /* Remove as margens padrões grudadas na borda da tela */
+    padding: 0; /* Remove os espaçamentos internos padrões */
+    display: flex; /* Alinha os elementos de dentro lado a lado */
+    height: 100vh; /* Faz a página ocupar 100% da altura da tela do monitor */
+    overflow: hidden; /* Esconde barras de rolagem para a tela ficar fixa */
+    font-family: 'Verdana', sans-serif; /* Define a fonte padrão do texto */
+    background-color: #000; /* Define a cor de fundo do site como preto */
+}
+
+/* Estilo da caixa branca que carrega o título que fica correndo */
+.caixa-titulo {
+    position: absolute; /* Permite posicionar a caixa livremente sobre os outros elementos */
+    top: 20px; /* Distância de 20 pixels do topo da tela */
+    left: 50%; /* Joga o início da caixa exatamente no meio horizontal da tela */
+    transform: translateX(-50%); /* Ajusta o centro real da própria caixa para ficar bem no meio */
+    z-index: 10; /* Faz a caixa ficar "por cima" de tudo o que estiver na tela */
+    background: #ffffff; /* Define a cor de fundo da caixa como branco */
+    border: 3px solid #000; /* Cria uma borda preta sólida de 3 pixels de espessura */
+    padding: 10px 20px; /* Espaço interno: 10px cima/baixo e 20px nas laterais */
+    width: 400px; /* Define a largura fixa da caixa em 400 pixels */
+    font-family: 'VT323', monospace; /* Aplica a fonte pixelada do Google nesta caixa */
+    font-size: 2.5rem; /* Aumenta o tamanho da letra do título */
+    color: #000; /* Define a cor da letra como preta */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    box-shadow: 6px 6px 0px #ff1493; /* Cria aquela sombra rosa dura no estilo retrô */
+}
+
+/* Configuração compartilhada pelas duas metades da tela (Bia e Felipe) */
+.lado {
+    flex: 1; /* Divide o espaço da tela igualmente entre os dois lados (50% para cada) */
+    display: flex; /* Ativa o modo de alinhamento flexível interno */
+    flex-direction: column; /* Coloca os itens de dentro um embaixo do outro (em coluna) */
+    justify-content: center; /* Centraliza os itens verticalmente no meio da tela */
+    align-items: center; /* Centraliza os itens horizontalmente no meio da tela */
+    transition: all 0.4s ease; /* Cria um efeito suave de transição que dura 0.4 segundos */
+}
+
+/* Efeito de quando você passa o mouse por cima de um dos lados */
+.lado:hover {
+    flex: 1.2; /* Faz o lado focado crescer e empurrar um pouco o outro lado */
+}
+
+/* Customização específica apenas do lado esquerdo (Bia) */
+.lado-bia {
+    background-color: #ffb6c1; /* Define a cor de fundo como rosa claro */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Aplica uma textura de poeira estelar por cima da cor */
+    border-right: 4px dashed #ff1493; /* Cria a linha pontilhada rosa escuro que divide o meio do site */
+}
+
+/* Estilo do título "NA VISÃO DA BIA" */
+.lado-bia h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Define a fonte fofa Comic Sans */
+    color: #ff1493; /* Define a cor do texto como rosa escuro */
+    font-size: 3rem; /* Aumenta consideravelmente o tamanho do título */
+    text-shadow: 2px 2px 0px #fff; /* Cria uma sombra branca seca atrás das letras */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Customização específica apenas do lado direito (Felipe) */
+.lado-felipe {
+    background-color: #030712; /* Define o fundo como um azul escuro quase preto */
+    background-image: radial-gradient(#1e293b 2px, transparent 2px); /* Cria uma estampa de pontinhos usando gradiente */
+    background-size: 30px 30px; /* Define o tamanho do espaçamento desses pontinhos */
+    cursor: crosshair; /* Muda a setinha do mouse para aquele formato de mira de jogo */
+}
+
+/* Estilo do título "Na visão do Felipe" */
+.lado-felipe h2 {
+    font-family: 'Courier New', Courier, monospace; /* Define uma fonte estilo máquina de escrever/programador */
+    color: #38bdf8; /* Define a cor do texto como azul claro */
+    font-size: 3rem; /* Aumenta o tamanho do título */
+    text-shadow: 0px 0px 10px rgba(56, 189, 248, 0.8); /* Cria um efeito neon brilhante azul em volta das letras */
+    letter-spacing: 2px; /* Dá um leve espaço entre cada letra do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo visual dos botões cinzas estilo Windows antigo (aplicado nos dois botões) */
+.btn-retro {
+    background-color: #c0c0c0; /* Cor de fundo cinza clássica de sistemas antigos */
+    border-top: 3px solid #fff; /* Borda branca em cima para simular luz rebatendo */
+    border-left: 3px solid #fff; /* Borda branca na esquerda para dar efeito 3D de relevo */
+    border-bottom: 3px solid #000; /* Borda preta embaixo para simular a sombra do botão */
+    border-right: 3px solid #000; /* Borda preta na direita para fechar a sombra 3D */
+    padding: 10px 25px; /* Espaço interno: 10px altura e 25px largura para encorpar o botão */
+    font-family: 'Verdana', sans-serif; /* Define a fonte do texto do botão */
+    font-weight: bold; /* Deixa a letra do botão em negrito */
+    font-size: 1.2rem; /* Define o tamanho da letra */
+    color: #000; /* Define a cor da letra como preta */
+    text-decoration: none; /* Remove aquele sublinhado padrão que links costumam ter */
+    margin-top: 20px; /* Empurra o botão 20 pixels para baixo, afastando-o da foto ou título */
+}
+
+/* Efeito de clique do botão retrô (quando ele é pressionado) */
+.btn-retro:active {
+    border-top: 3px solid #000; /* Inverte a borda de cima para preto (simula que afundou) */
+    border-left: 3px solid #000; /* Inverte a borda da esquerda para preto */
+    border-bottom: 3px solid #fff; /* Inverte a borda de baixo para branco */
+    border-right: 3px solid #fff; /* Inverte a borda da direita para branco */
+}
+
+/* Estilo aplicado especificamente na foto da Bia */
+.foto-perfil {
+    width: 220px; /* Define a largura da foto como 220 pixels */
+    height: 220px; /* Define a altura da foto como 220 pixels (fica um quadrado perfeito) */
+    object-fit: cover; /* Faz a foto se adaptar ao quadrado sem esticar ou achatar a imagem */
+    border: 4px solid #fff; /* Cria uma moldura branca de 4 pixels em volta da foto */
+    border-radius: 20px; /* Arredonda os cantos da foto deixando-a menos pontuda */
+    box-shadow: 6px 6px 0px #ff1493; /* Cria a sombra rosa dura combinando com o título do site */
+    margin-bottom: 20px; /* Cria um espaço de 20 pixels abaixo da foto para o botão não grudar */
+}

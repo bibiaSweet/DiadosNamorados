@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive, sans-serif; /* Fonte fofa e legível */
+}
+
+body {
+    background-color: #ffb3c1; /* Fundo Rosa Claro */
+    color: #a4133c; /* Texto Vinho Escuro */
+}
+
+/* Navegação */
+header {
+    background-color: #c9184a;
+    padding: 15px;
+    border-bottom: 4px dashed #a4133c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'VT323', monospace;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a4133c;
+}
+
+/* Seções Gerais */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border: 3px solid #c9184a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 6px 6px 0px #c9184a;
+    text-align: center;
+}
+
+h2 {
+    color: #c9184a;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Contador */
+#relogio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a4133c;
+    background: #ffb3c1;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Linha do Tempo & Grades */
+.timeline-item, .card-musica, .card-lugar {
+    background: #fff0f3;
+    border: 2px solid #ffb3c1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline-item img, .card-musica img, .card-lugar img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-musica {
+    width: 200px;
+    text-decoration: none;
+    color: #a4133c;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.card-musica:hover {
+    transform: scale(1.05);
+}
+
+/* Botões (Cartas e Quiz) */
+button {
+    background-color: #c9184a;
+    color: white;
+    border: 2px solid #a4133c;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a4133c;
+    transform: translateY(-2px);
+}
+
+/* Cartas Ocultas */
+.carta-oculta {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff0f3;
+    border: 2px dashed #c9184a;
+    border-radius: 10px;
+}
+
+.carta-oculta.ativa {
+    display: block;
+}
+
+/* Quiz */
+.pergunta-quiz {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #ffb3c1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #a4133c;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+.timeline-item img {
+  /* Controla o tamanho da imagem */
+  width: 90%; /* Faz a imagem ocupar quase toda a largura disponível da caixa */
+  max-width: 300px; /* Garante que a foto não fique gigante em telas grandes */
+  height: auto; /* Mantém a proporção original da imagem para não distorcer */
+
+  /* Adiciona a borda legal */
+  border: 4px solid #c9184a; /* Cria uma borda grossa no tom de vinho */
+  border-radius: 12px; /* Deixa os cantos da imagem arredondados */
+
+  /* Efeito extra: uma sombra suave para a foto "saltar" da tela */
+  box-shadow: 0px 5px 15px rgba(164, 19, 60, 0.3);
+  
+  /* Espaço entre a foto e o texto "PRIMEIRA CONVERSA" */
+  margin-bottom: 15px; 
+}
+
+.card-musica::after,
+.card-musica::before {
+    display: none !important;
+}
