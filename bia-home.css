@@ -1,0 +1,74 @@
+/* CONFIGURAÇÃO DO FUNDO E DA PÁGINA */
+body {
+    /* Não esqueça de colocar o nome da sua imagem gigante aqui embaixo */
+    background-image: url('home.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espalha o conteúdo: título no topo, botões lá embaixo */
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+/* TÍTULO LÁ NO TOPO */
+.titulo-topo {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 3.5rem;
+    /* Sombreado nos tons da sua paleta */
+    text-shadow: 3px 3px 0px #c9184a, -1px -1px 0px #a4133c; 
+}
+
+/* BARRA DOS BOTÕES LÁ EMBAIXO */
+.barra-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    /* Um leve degradê escuro embaixo para os botões não sumirem na foto */
+    background: linear-gradient(to top, rgba(164, 19, 60, 0.7), transparent); 
+    flex-wrap: wrap; 
+}
+
+/* ESTILO DOS BOTÕES DA BIA */
+.btn-opcao {
+    background-color: rgba(255, 179, 193, 0.95); /* Rosa clarinho quase sólido */
+    color: #a4133c; /* Letra vinho */
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid #c9184a;
+    transition: 0.3s;
+    box-shadow: 4px 4px 0px #a4133c;
+}
+
+/* ANIMAÇÃO QUANDO PASSA O MOUSE NOS BOTÕES */
+.btn-opcao:hover {
+    background-color: #c9184a;
+    color: white;
+    transform: translateY(-5px); /* Dá um pulinho pra cima */
+    box-shadow: 6px 6px 0px #5c0b22;
+}
+
+/* BOTÃO DE VOLTAR */
+.btn-voltar {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #c9184a;
+    border-color: #c9184a;
+}
