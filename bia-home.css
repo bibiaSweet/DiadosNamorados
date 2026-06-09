@@ -1,7 +1,7 @@
 /* CONFIGURAÇÃO DO FUNDO E DA PÁGINA */
 body {
     /* Não esqueça de colocar o nome da sua imagem gigante aqui embaixo */
-    background-image: url('home.png'); 
+    background-image: url('images/home.png'); 
     background-size: cover;
     background-position: center;
     height: 100vh;

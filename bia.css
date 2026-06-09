@@ -381,3 +381,20 @@ footer {
     background-color: #a4133c;
     box-shadow: 6px 8px 0px #5c0b22;
 }
+
+/* PROF MÁRCIA ME ENSINOU */
+
+.fish {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    transform:translateY(-10px) ;
+
+}
+
+.fish img {
+     width: 64px !important;
+    border: none !important; 
+    box-shadow: none !important;
+}
