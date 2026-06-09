@@ -1,6 +1,5 @@
-/* CONFIGURAÇÃO DO FUNDO E DA PÁGINA */
+/* FUNDO DA PÁGINA */
 body {
-    /* Não esqueça de colocar o nome da sua imagem gigante aqui embaixo */
     background-image: url('images/home.png'); 
     background-size: cover;
     background-position: center;
@@ -29,15 +28,12 @@ body {
     align-items: center;
     gap: 20px;
     padding: 40px 20px;
-    /* Um leve degradê escuro embaixo para os botões não sumirem na foto */
-    background: linear-gradient(to top, rgba(164, 19, 60, 0.7), transparent); 
     flex-wrap: wrap; 
 }
 
-/* ESTILO DOS BOTÕES DA BIA */
+/* ESTILO DOS BOTÕES */
 .btn-opcao {
-    background-color: rgba(255, 179, 193, 0.95); /* Rosa clarinho quase sólido */
-    color: #a4133c; /* Letra vinho */
+    background-color: rgba(255, 179, 193, 0.95); 
     padding: 15px 25px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -48,7 +44,7 @@ body {
     box-shadow: 4px 4px 0px #a4133c;
 }
 
-/* ANIMAÇÃO QUANDO PASSA O MOUSE NOS BOTÕES */
+/* QUANDO PASSA O MOUSE NOS BOTÕES */
 .btn-opcao:hover {
     background-color: #c9184a;
     color: white;
