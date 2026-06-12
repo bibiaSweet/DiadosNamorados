@@ -105,19 +105,39 @@
             margin: 0;
         }
 
-        /* Ajuste para celular: As fotos ficam gigantes e a linha vai pro canto */
-        @media screen and (max-width: 800px) {
+         /* Ajuste para celular: As fotos ficam gigantes e a linha vai pro canto */
+
+/* É a nossa "linha de corte". Ela diz ao navegador: 
+"Só aplique as regras abaixo se a tela do dispositivo for menor que 800px".       */
+
+  @media screen and (max-width: 800px) {
+
+    /* Move a linha vertical da linha do tempo para o canto esquerdo da tela,
+     liberando espaço para o texto no celular. */
+
             .timeline-container::after {
                 left: 31px;
             }
+
+            /* : Faz com que cada bloco de conteúdo da linha
+             do tempo ocupe a largura total da tela do celular, empilhando-os verticalmente. */
+
             .timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
+
+            /* No computador, alguns itens vão para a direita e outros para a esquerda.
+             No celular, essa regra joga tudo de volta para alinhar à esquerda, mantendo o padrão. */
+
             .timeline-item.right {
                 left: 0;
             }
+
+            /* Garante que nenhuma foto "estoure" ou fique maior que a 
+            caixinha do texto. A imagem se adapta ao tamanho disponível. */
+
             .content img {
                 max-width: 100%; /* No celular, a foto vai ocupar 100% do espaço da caixinha */
             }
@@ -308,7 +328,7 @@
                         <img src="./images/TATTOO.jpg" alt="Tattoo">
                         <h4>10/06/2026</h4>
                         <p>NOSSA TATTOO</p>
-                        <h3>nossa</h3>
+                        <h3>a maior dor do nosso relacionamento kkkkkk</h3>
                     </div>
                 </div>
 
